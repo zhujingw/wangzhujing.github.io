@@ -482,6 +482,7 @@ body {
   margin: 0;
   padding: 0;
   height: 123px;
+  width: 100%;
   background: #e4e4e3; }
   .top_container header.site_header {
     height: 123px; }
@@ -513,7 +514,7 @@ body {
         overflow: hidden; }
         .top_container header.site_header .nav_container .site_nav ul {
           float: right;
-          margin: 50.5px 0px 50.5px 0px;
+          margin: 50.5px 2.1% 50.5px 0px;
           padding: 0;
           background: #e4e4e3;
           list-style: none; }
@@ -527,7 +528,8 @@ body {
   margin: 0;
   padding: 0;
   width: 8%;
-  height: 647px;
+  height: 1000px;
+  background: #e4e4e3;
   display: inline-block; }
   .left_container .social_nav_container {
     width: 100%;
@@ -536,7 +538,7 @@ body {
     .left_container .social_nav_container ul {
       display: inline;
       margin: 1px 2px 3px 3%;
-      position: absolute;
+      position: fixed;
       bottom: 11%;
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
@@ -550,8 +552,10 @@ body {
         display: inline;
         padding-left: 20px; }
   .left_container .follow_icon_container {
-    width: 100%;
+    width: 8%;
     height: 109px;
+    position: fixed;
+    bottom: 1%;
     background-image: url(/assets/img/FOLLOW.png);
     background-repeat: no-repeat;
     background-color: #e4e4e3;
@@ -561,15 +565,15 @@ body {
   magrin: 0;
   padding: 0;
   width: 84%;
-  height: 647px;
-  background: #e4e4e3;
+  height: 1000px;
+  background: white;
   display: inline-block; }
 
 .right_container {
   margin: 0;
   padding: 0;
   width: 8%;
-  height: 647px;
+  height: 1000px;
   background: #e4e4e3;
   display: inline-block; }
   .right_container .sub_nav_container {
@@ -581,9 +585,9 @@ body {
       font-size: 14px;
       white-space: nowrap;
       margin: 0;
-      position: absolute;
-      bottom: 10%;
-      right: 35%;
+      position: fixed;
+      bottom: 15%;
+      right: 3%;
       -webkit-transform-origin: 100% 0%;
               transform-origin: 100% 0%;
       -webkit-transform: rotate(90deg);
