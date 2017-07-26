@@ -1,0 +1,63 @@
+.mid_container
+    margin-left: 8%
+    padding: 0
+    width: 84%
+    height: 645px
+    background: #e4e4e3
+    z-index: 1
+    .main_content_container
+        margin: 0 16% 0 16%
+        padding: 0
+        width: 68%
+        height: 100%
+        // background: pink
+        display: flex
+        flex-direction: row
+        .left_box
+            width: 50%
+            height: 68%
+            position: relative
+            background: #333333
+            margin-top: 6%
+            z-index: 2
+            display: flex
+            flex-direction: column
+            .top_text_box
+                margin: 30% 21% 0% 9%
+                height: 68%
+                position: absolute
+                .hello
+                    margin: 0
+                    font-family: "DIN Condensed"
+                    font-size: 24px
+                    font-stretch: extra-condensed
+                    color: white
+                .name
+                    margin: 0
+                    font-family: "Futura"
+                    font-size: 36px
+                    color: white
+                .skills
+                    margin: 0
+                    font-family: "Futura"
+                    font-size: 20px
+                    color: white
+                .hashtags
+                    margin: 0
+                    list-style: none
+                    padding-left: 30%
+                    li
+                        font-family: "Futura"
+                        font-size: 16px
+                        color: white
+            .bottom_text_box
+        .right_box
+            +hide-text
+            width: 50%
+            height: 78%
+            z-index: 2
+            background:
+                image: url(/assets/img/IMG_1615.JPG)
+                repeat: no-repeat
+                position: center
+                size: cover

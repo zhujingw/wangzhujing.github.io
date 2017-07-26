@@ -483,7 +483,8 @@ body {
   padding: 0;
   height: 123px;
   width: 100%;
-  background: #e4e4e3; }
+  background: #e4e4e3;
+  z-index: 99; }
   .top_container header.site_header {
     height: 123px; }
     .top_container header.site_header .logo_container {
@@ -525,6 +526,8 @@ body {
             padding-right: 30px; }
 
 .left_container {
+  position: fixed;
+  left: 0;
   margin: 0;
   padding: 0;
   width: 8%;
@@ -561,15 +564,9 @@ body {
     background-color: #e4e4e3;
     background-position: center; }
 
-.main_content_container {
-  magrin: 0;
-  padding: 0;
-  width: 84%;
-  height: 1000px;
-  background: white;
-  display: inline-block; }
-
 .right_container {
+  position: fixed;
+  right: 0;
   margin: 0;
   padding: 0;
   width: 8%;
@@ -592,3 +589,70 @@ body {
               transform-origin: 100% 0%;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }
+
+.mid_container {
+  margin-left: 8%;
+  padding: 0;
+  width: 84%;
+  height: 645px;
+  background: #e4e4e3;
+  z-index: 1; }
+  .mid_container .main_content_container {
+    margin: 0 16% 0 16%;
+    padding: 0;
+    width: 68%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .mid_container .main_content_container .left_box {
+      width: 50%;
+      height: 68%;
+      position: relative;
+      background: #333333;
+      margin-top: 6%;
+      z-index: 2;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .mid_container .main_content_container .left_box .top_text_box {
+        margin: 30% 21% 0% 9%;
+        height: 68%;
+        position: absolute; }
+        .mid_container .main_content_container .left_box .top_text_box .hello {
+          margin: 0;
+          font-family: "DIN Condensed";
+          font-size: 24px;
+          font-stretch: extra-condensed;
+          color: white; }
+        .mid_container .main_content_container .left_box .top_text_box .name {
+          margin: 0;
+          font-family: "Futura";
+          font-size: 36px;
+          color: white; }
+        .mid_container .main_content_container .left_box .top_text_box .skills {
+          margin: 0;
+          font-family: "Futura";
+          font-size: 20px;
+          color: white; }
+        .mid_container .main_content_container .left_box .top_text_box .hashtags {
+          margin: 0;
+          list-style: none;
+          padding-left: 30%; }
+          .mid_container .main_content_container .left_box .top_text_box .hashtags li {
+            font-family: "Futura";
+            font-size: 16px;
+            color: white; }
+    .mid_container .main_content_container .right_box {
+      overflow: hidden;
+      text-indent: 101%;
+      white-space: nowrap;
+      width: 50%;
+      height: 78%;
+      z-index: 2;
+      background-image: url(/assets/img/IMG_1615.JPG);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }

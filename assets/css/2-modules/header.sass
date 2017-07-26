@@ -4,6 +4,7 @@
     height: 123px
     width: 100%
     background: #e4e4e3
+    z-index: 99
     header.site_header
         height: 123px
         .logo_container
@@ -45,6 +46,8 @@
 
 
 .left_container
+    position: fixed
+    left: 0
     margin: 0
     padding: 0
     width: 8%
@@ -83,15 +86,17 @@
             position: center
 
 
-.main_content_container
-    magrin: 0
-    padding: 0
-    width: 84%
-    height: 1000px
-    background: white
-    display: inline-block
+// .main_content_container
+//     magrin: 0
+//     padding: 0
+//     width: 84%
+//     height: 1000px
+//     background: white
+//     display: inline-block
 
 .right_container
+    position: fixed
+    right: 0
     margin: 0
     padding: 0
     width: 8%
