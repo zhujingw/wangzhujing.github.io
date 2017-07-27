@@ -619,23 +619,25 @@ body {
         flex-direction: row; }
     .mid_container .main_content_container .left_box {
       width: 45%;
-      height: 68%;
+      height: 72%;
       position: relative;
       background: #333333;
-      margin-top: 6%;
+      margin-top: 5%;
       z-index: 2;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column; }
       .mid_container .main_content_container .left_box .top_text_box {
+        -ms-flex-order: 0;
+            order: 0;
         margin: 30% 21% 0% 9%;
         height: 68%;
         position: absolute; }
         .mid_container .main_content_container .left_box .top_text_box .hello {
           margin-top: 5%;
           font-family: "DIN Condensed";
-          font-size: 24px;
+          font-size: 200%;
           font-stretch: extra-condensed;
           color: white; }
         .mid_container .main_content_container .left_box .top_text_box .name {
@@ -658,6 +660,18 @@ body {
             font-family: "Futura";
             font-size: 16px;
             color: white; }
+      .mid_container .main_content_container .left_box .bottom_text_box {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background: white; }
+        .mid_container .main_content_container .left_box .bottom_text_box p {
+          text-align: right;
+          margin: 0;
+          font-family: "Futura";
+          font-size: 12px;
+          color: black; }
     .mid_container .main_content_container .right_box {
       overflow: hidden;
       text-indent: 101%;
