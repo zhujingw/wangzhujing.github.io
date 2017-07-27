@@ -7,6 +7,8 @@
     z-index: 99
     header.site_header
         height: 123px
+        display: flex
+        flex-flow: row
         .logo_container
             margin: 0
             padding: 0
@@ -14,9 +16,15 @@
             height: 123px
             background: white
             display: inline-block
+            z-index: 2
+            position: relative
             .logo
                 +hide-text
-                margin: 32px 24px 20px 32px
+                width: 100%
+                margin: 0
+                position: fixed
+                top: 4%
+                left: 3%
                 background:
                     image: url(/assets/img/zj.png)
                     repeat: no-repeat
@@ -29,6 +37,7 @@
             height: 123px
             background: white
             display: inline-block
+            z-index: 1
             .site_nav
                 height: 123px
                 overflow: hidden

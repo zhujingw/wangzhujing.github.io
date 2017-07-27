@@ -486,19 +486,29 @@ body {
   background: white;
   z-index: 99; }
   .top_container header.site_header {
-    height: 123px; }
+    height: 123px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+        flex-flow: row; }
     .top_container header.site_header .logo_container {
       margin: 0;
       padding: 0;
       width: 8%;
       height: 123px;
       background: white;
-      display: inline-block; }
+      display: inline-block;
+      z-index: 2;
+      position: relative; }
       .top_container header.site_header .logo_container .logo {
         overflow: hidden;
         text-indent: 101%;
         white-space: nowrap;
-        margin: 32px 24px 20px 32px;
+        width: 100%;
+        margin: 0;
+        position: fixed;
+        top: 4%;
+        left: 3%;
         background-image: url(/assets/img/zj.png);
         background-repeat: no-repeat;
         background-width: 100%;
@@ -509,7 +519,8 @@ body {
       width: 92%;
       height: 123px;
       background: white;
-      display: inline-block; }
+      display: inline-block;
+      z-index: 1; }
       .top_container header.site_header .nav_container .site_nav {
         height: 123px;
         overflow: hidden; }
@@ -629,13 +640,15 @@ body {
           color: white; }
         .mid_container .main_content_container .left_box .top_text_box .name {
           margin: 0;
+          padding-left: 5%;
           font-family: "Futura";
           font-size: 36px;
           color: white; }
         .mid_container .main_content_container .left_box .top_text_box .skills {
           margin-top: 7%;
+          padding-left: 5%;
           font-family: "Futura";
-          font-size: 20px;
+          font-size: 15px;
           color: white; }
         .mid_container .main_content_container .left_box .top_text_box .hashtags {
           margin: 0;
